@@ -112,8 +112,17 @@ def end_of_choices_message():
     print(entertainment_choice)
 
 
+def confirmed_choices_message():
+    print("Congratulations! You have confirmed the trip you want. ")
+    print('The trip options chosed are:')
+    print(place)
+    print(dine)
+    print(transport)
+    print(entertainment_choice)
+
+
 def farewell_message():
-    print("Now that your trip is ready-let the fun begin! 🎉")
+    print("Your trip is ready-let the fun begin! 🎉")
 
 
 welcome_message()
