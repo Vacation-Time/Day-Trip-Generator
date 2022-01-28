@@ -103,6 +103,15 @@ def choose_entertainment(list_of_strings):
             print('Lets try again')
 
 
+def end_of_choices_message():
+    print("Congratulations! Now that your choices have been made let's confirm this is the trip you want. ")
+    print('The trip options chosed are:')
+    print(place)
+    print(dine)
+    print(transport)
+    print(entertainment_choice)
+
+
 def farewell_message():
     print("Now that your trip is ready-let the fun begin! 🎉")
 
@@ -112,4 +121,5 @@ place = choose_destination(destinations)
 dine = choose_restaurant(restaurants)
 transport = choose_transprtation(transprtation_options)
 entertainment_choice = choose_entertainment(entertainment_options)
+end_of_choices_message()
 farewell_message()
