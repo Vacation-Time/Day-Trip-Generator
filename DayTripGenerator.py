@@ -113,12 +113,8 @@ def end_of_choices_message():
 
 
 def confirmed_choices_message():
-    print("Congratulations! You have confirmed the trip you want. ")
-    print('The trip options chosed are:')
-    print(place)
-    print(dine)
-    print(transport)
-    print(entertainment_choice)
+    print(
+        f'Congratulations! You have chosen to go to {place}, eat at {dine}, get there by {transport}, and while you are there you chose to {entertainment_choice}! ')
 
 
 def farewell_message():
@@ -131,4 +127,5 @@ dine = choose_restaurant(restaurants)
 transport = choose_transprtation(transprtation_options)
 entertainment_choice = choose_entertainment(entertainment_options)
 end_of_choices_message()
+confirmed_choices_message()
 farewell_message()
