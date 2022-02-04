@@ -129,3 +129,23 @@ entertainment_choice = choose_entertainment(entertainment_options)
 end_of_choices_message()
 confirmed_choices_message()
 farewell_message()
+
+##################################################################
+# added ability to re-run entire trip if end result was 'no'
+user_is_happy = False
+
+while user_is_happy is False:
+    user_input = input(
+        f'Congratulations! You have chosen to go to {place}, eat at {dine}, get there by {transport}, and while you are there you chose to {entertainment_choice}! Are you happy with this trip?  yes or no? ')
+    if user_input == 'yes':
+        break
+    elif user_input == 'no':
+        place = choose_destination(destinations)
+        dine = choose_restaurant(restaurants)
+        transport = choose_transprtation(transprtation_options)
+        entertainment_choice = choose_entertainment(entertainment_options)
+
+
+end_of_choices_message()
+confirmed_choices_message()
+farewell_message()
